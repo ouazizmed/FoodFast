@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OnBoarding_3Fragment"
+    tools:context=".introdactory.OnBoarding_3Fragment"
     android:background="@color/blue_dark_color">
 
     <ImageView

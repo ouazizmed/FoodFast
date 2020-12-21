@@ -1,4 +1,4 @@
-package com.zizmotrex.foodfast;
+package com.zizmotrex.foodfast.introdactory;
 
 import android.os.Bundle;
 
@@ -8,15 +8,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class OnBoarding_3Fragment extends Fragment {
+import com.zizmotrex.foodfast.R;
+
+
+public class OnBoarding_2Fragment extends Fragment {
+
 
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        View root = inflater.inflate(R.layout.fragment_on_boarding_3, container, false);
+        // Inflate the layout for this fragment
+        View root = inflater.inflate(R.layout.fragment_on_boarding_2, container, false);
 
         return root;
     }

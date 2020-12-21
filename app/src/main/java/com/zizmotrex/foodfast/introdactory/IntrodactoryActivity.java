@@ -1,4 +1,4 @@
-package com.zizmotrex.foodfast;
+package com.zizmotrex.foodfast.introdactory;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,10 +8,13 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.zizmotrex.foodfast.R;
 
 public class IntrodactoryActivity extends AppCompatActivity {
 
@@ -20,6 +23,7 @@ public class IntrodactoryActivity extends AppCompatActivity {
     LottieAnimationView lottieAnimationView;
 
     private static final int NUM_PAGES = 3;
+    Animation anim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,9 @@ public class IntrodactoryActivity extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.pager);
         ScreenSlidePagerAdapter pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
+
+        anim = AnimationUtils.loadAnimation(this, R.anim.fade_anim);
+        viewPager.setAnimation(anim);
 
         splashImage.animate().translationY(-2500).setDuration(1000).setStartDelay(4000);
         logo.animate().translationY(1800).setDuration(1000).setStartDelay(4000);
