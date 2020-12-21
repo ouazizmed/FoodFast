@@ -37,22 +37,23 @@ public class LoginActivity extends AppCompatActivity {
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tableLayout));
 
+
         fb.setTranslationY(300);
         ggl.setTranslationY(300);
         twitter.setTranslationY(300);
-        tableLayout.setTranslationY(300);
+      //  tableLayout.setTranslationY(300);
 
 
         fb.setAlpha(v);
         ggl.setAlpha(v);
         twitter.setAlpha(v);
-        tableLayout.setAlpha(v);
+      //  tableLayout.setAlpha(v);
 
 
         fb.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(400).start();
         ggl.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(600).start();
         twitter.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(800).start();
-        fb.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(400).start();
+        //tableLayout.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(100).start();
 
 
 
